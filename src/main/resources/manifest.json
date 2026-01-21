@@ -1,0 +1,8 @@
+{
+    "Group": "net.nova.gaytale",
+    "Name": "Gaytale PacketProx",
+    "Version": "0.0.1",
+    "Hyxin": {
+        "Configs": ["packetprox.mixins.json"]
+    }
+}
