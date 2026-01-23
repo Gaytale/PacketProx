@@ -1,8 +1,13 @@
 {
     "Group": "net.nova.gaytale",
     "Name": "Gaytale PacketProx",
-    "Version": "0.0.1",
-    "Hyxin": {
-        "Configs": ["packetprox.mixins.json"]
-    }
+    "Version": "0.0.2",
+    "Description": "Logs packets coming in and out of the Hytale server",
+    "Website": "https://novampr.is-a.dev/",
+    "ServerVersion": "*",
+    "Dependencies": {},
+    "OptionalDependencies": {},
+    "DisabledByDefault": false,
+    "IncludesAssetPack": false,
+    "Main": "net.nova.gaytale.packetprox.PacketProx"
 }
