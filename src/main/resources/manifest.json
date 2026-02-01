@@ -1,7 +1,7 @@
 {
-    "Group": "net.nova.gaytale",
-    "Name": "Gaytale PacketProx",
-    "Version": "0.0.2",
+    "Group": "Gaytale",
+    "Name": "PacketProx",
+    "Version": "0.0.3",
     "Description": "Logs packets coming in and out of the Hytale server",
     "Website": "https://novampr.is-a.dev/",
     "ServerVersion": "*",

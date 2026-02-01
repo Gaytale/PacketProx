@@ -3,12 +3,13 @@ plugins {
 }
 
 group = "net.nova.gaytale.packetprox"
-version = "0.0.2"
+version = "0.0.3"
 
 repositories {
     mavenCentral()
+    maven("https://maven.hytale.com/release")
 }
 
 dependencies {
-    compileOnly(files("/libs/HytaleServer.jar"))
+    compileOnly("com.hypixel.hytale:Server:2026.01.28-87d03be09")
 }

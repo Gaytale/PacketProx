@@ -1,1 +1,1 @@
-rootProject.name = "Gaytale-PacketProx"
+rootProject.name = "PacketProx"

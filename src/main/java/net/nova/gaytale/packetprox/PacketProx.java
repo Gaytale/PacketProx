@@ -5,6 +5,7 @@ import com.hypixel.hytale.logger.HytaleLogger;
 import com.hypixel.hytale.protocol.CachedPacket;
 import com.hypixel.hytale.protocol.Packet;
 import com.hypixel.hytale.protocol.PacketRegistry;
+import com.hypixel.hytale.server.core.event.events.player.PlayerDisconnectEvent;
 import com.hypixel.hytale.server.core.io.PacketHandler;
 import com.hypixel.hytale.server.core.io.adapter.PacketAdapters;
 import com.hypixel.hytale.server.core.plugin.JavaPlugin;
@@ -74,6 +75,10 @@ public class PacketProx extends JavaPlugin {
 
         PacketAdapters.registerOutbound((PacketHandler handler, Packet packet) -> {
             logSend(handler.getChannel().remoteAddress(), packet);
+        });
+
+        this.getEventRegistry().register(PlayerDisconnectEvent.class, (event) -> {
+            clean(event.getPlayerRef().getPacketHandler().getChannel().remoteAddress());
         });
     }
 
